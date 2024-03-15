@@ -1,0 +1,75 @@
+/* BODY */
+body {
+  /* padding: 10rem 25rem; */
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* Structure */
+.structure {
+  padding: 2rem;
+  background-color: aliceblue;
+  width: 30rem;
+  border-radius: 5px;
+}
+
+/* P-REFERESH */
+.p-referesh {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bx {
+  width: 1rem;
+  height: 1rem;
+}
+
+.bx-refresh {
+  font-size: 1.5rem;
+}
+
+.p-desc {
+  padding-left: 1rem;
+}
+
+/* ADD_LIST */
+.add-list {
+  height: 2rem;
+  width: 24rem;
+  margin: 1rem 0;
+}
+
+.dynamic-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.check-p-wrap {
+  display: flex;
+}
+
+.underline {
+  height: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* TODO-LIST */
+.todo-list {
+  padding-right: 1rem;
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+/* CLEAR TASKS */
+.clear-tasks {
+  padding: 0.8rem 0.3rem;
+  margin-top: 1.5rem;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 7px;
+}
