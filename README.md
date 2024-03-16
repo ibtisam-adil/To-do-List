@@ -58,7 +58,7 @@ Creating a to-do list dynamically using JavaScript involves dynamically generati
 
 ## 🚀 Live Demo <a name="To-do List"></a>
 
-https://pakistan-politics.netlify.app/
+https://To-do-list.netlify.app/
 This is live version of my protfolio project.you can click on this link to watch live demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
