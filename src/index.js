@@ -1,72 +1,58 @@
+// eslint-disable-next-line no-unused-vars
 import _ from 'lodash';
 import './style.css';
+import addtask from './newTask.js';
+import renderTodo from './render.js';
 
-const todoList = document.querySelector(".todo-list");
+const addList = document.querySelector('.add-list');
 
-let todo = [
-  {
-    description: "Demo Task-1",
-    iscompleted: false,
-    index: 0,
-  },
-  {
-    description: "Demo Task-2",
-    iscompleted: false,
-    index: 1,
-  },
-  {
-    description: "Demo Task-3",
-    iscompleted: false,
-    index: 2,
-  },
-  {
-    description: "Demo Task-4",
-    iscompleted: false,
-    index: 3,
-  },
-  {
-    description: "Demo Task-5",
-    iscompleted: false,
-    index: 4,
-  },
-  {
-    description: "Demo Task-6",
-    iscompleted: false,
-    index: 5,
-  },
-  {
-    description: "Demo Task-7",
-    iscompleted: false,
-    index: 6,
-  },
-  {
-    description: "Demo Task-8",
-    iscompleted: false,
-    index: 7,
-  },
+class TodoList {
+  constructor() {
+    this.todo = [];
+  }
 
-];
+  addTask = () => {
+    addtask(this.todo, this.rendertodo, addList);
+  }
 
-todoList.innerHTML = todo.map((arr) => {
-    return `
-        <div class="dynamic-wrapper">
-        <div class="check-p-wrap">
-            <input class="checkbox" type="checkbox">
-            <label for="checkbox${arr.index}" class="p-desc">${arr.description}</label>
-        </div>
-        <i class='bx bx-dots-vertical-rounded'></i>
-        </div>
-        <div class="underline"></div>
-        `
-}).join("");
+  editTask = (label, id) => {
+    label.contentEditable = true;
+    label.focus();
+    label.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        this.todo[id].taskValue = label.innerHTML;
+        this.rendertodo();
+      }
+    });
+  }
 
-// function component() {
-//   const element = document.createElement('div');
+  updateTaskStatus = (id) => {
+    if (this.todo[id].isCompleted) {
+      this.todo[id].isCompleted = false;
+      this.rendertodo();
+    } else {
+      this.todo[id].isCompleted = true;
+      this.rendertodo();
+    }
+  }
 
-//   // Lodash, currently included via a script, is required for this line to work
-//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  deleteTask = (id) => {
+    this.todo.splice(id, 1);
+    this.rendertodo();
+  }
 
-//   return element;
-// }
+  rendertodo = () => {
+    renderTodo(this.todo, this.editTask, this.deleteTask, this.updateTaskStatus);
+  }
 
-// document.body.appendChild(component());
+  bindEvent = () => {
+    addList.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        this.addTask();
+      }
+    });
+  }
+}
+
+const muneebtodo = new TodoList();
+muneebtodo.bindEvent();

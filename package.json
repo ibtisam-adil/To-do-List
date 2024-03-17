@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/ibtisam-adil/To-do-List#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "css-loader": "^6.10.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.29.1",
     "hint": "^7.1.10",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.4",

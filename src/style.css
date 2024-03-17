@@ -73,3 +73,11 @@ body {
   text-align: center;
   border-radius: 7px;
 }
+
+.dropdown {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
