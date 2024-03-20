@@ -4,7 +4,6 @@ const rendertodo = (todoarr, editTask, deleteTask, updateTaskStatus) => {
           <div class="dynamic-wrapper">
               <div class="check-p-wrap">
                   <input class="checkbox" type="checkbox">
-                  
                   <label id="task-${id}" class="p-desc ${arr.isCompleted ? 'completed' : ''}">${arr.taskValue}</label>
               </div>
               <i class='bx bx-dots-vertical-rounded dots'></i>

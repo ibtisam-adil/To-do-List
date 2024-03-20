@@ -9,6 +9,9 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
+  devServer: {
+    static: './dist',
+  },
   output: {
     clean: true,
     filename: 'main.js',
