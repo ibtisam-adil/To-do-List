@@ -50,7 +50,6 @@ Creating a to-do list dynamically using JavaScript involves dynamically generati
 - **It has CSS**
 - **It has javascript**
 - **Responsive design**
-- **Feature speakers part is fully made dynamically by JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,15 +93,6 @@ Step 2: Locate the folder where you cloned your project to and open the `index.h
 - GitHub: [@ibtisam-adil](https://github.com/ibtisam-adil)
 - Twitter: [@ibtisam__adil](https://twitter.com/Ibtisam__adil)
 - LinkedIn: [@ibtisamadildev](http://www.linkedin.com/in/ibtisamadildev)
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- **More detailed**
-- **Master HTML**
-- **deskstop version**
--
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 📼 Project Walkthrough <a name="project-walk"></a>
