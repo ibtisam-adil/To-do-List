@@ -1,6 +1,5 @@
 /* BODY */
 body {
-  /* padding: 10rem 25rem; */
   display: grid;
   place-items: center;
   height: 100vh;
@@ -60,7 +59,6 @@ body {
 
 /* TODO-LIST */
 .todo-list {
-  padding-right: 1rem;
   max-height: 20rem;
   overflow-y: auto;
 }
