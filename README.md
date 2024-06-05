@@ -28,7 +28,7 @@
 
 # 🎬 To-do List <a name="about-project"></a>
 
-Creating a to-do list dynamically using JavaScript involves dynamically generating HTML elements like list items and adding interactivity for tasks such as marking them as completed or deleting them. This is typically achieved by event handling and manipulation of the Document Object Model (DOM) through JavaScript code.
+Creating a to-do list dynamically using JavaScript involves dynamically generating HTML elements like list items and adding interactivity for tasks such as marking them as completed or deleting them. This is typically achieved by event handling and manipulation of the Document Object Model (DOM) through JavaScript code. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
